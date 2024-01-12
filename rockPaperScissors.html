@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,5 +31,91 @@
         <button id="scissors">Scissors</button>
     </section>
     
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #282c34;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #61dafb;
+            color: #282c34;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #4fa3d1;
+        }
+
+        #message {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #player-score,
+        #computer-score {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script defer src="rock_paper.js"></script>
+</head>
+<body>
+    <section>
+        <div class="computer">
+            <h1>Computer: <span id="computer-score">0</span></h1>
+        </div>
+        <div class="player">
+            <h1>Player: <span id="player-score">0</span></h1>
+        </div>
+    </section>
+    <section id="message">
+        <h3>Select an option to get started</h3>
+    </section>
+    <section>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </section>
 </body>
 </html>
